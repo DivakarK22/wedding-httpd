@@ -17,7 +17,7 @@ spec:
         app: wedding-proj
     spec:
       containers:
-      - name: httpd-proj
+      - name: wedding-proj
         image: divakar2201/wedding-proj:latest
         imagePullPolicy: Always
         ports:
