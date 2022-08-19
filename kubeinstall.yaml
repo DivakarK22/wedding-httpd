@@ -6,7 +6,7 @@
     - name: deploy httpd-proj on kubernetes
       shell: |
         kubectl delete deployment.apps/wedding-proj
-        mkdir /home/master/deployments/wedding-proj
+        git clone git@github.com:DivakarK22/wedding-httpd.git
         cd /home/master/deployments/wedding-proj
         kubectl apply -f deploy.yaml
         kubectl apply -f service.yaml
